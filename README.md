@@ -1,3 +1,15 @@
+ng new angular-app
+
+ng g c contact-list
+ng g c contact-details
+
+ng serve
+
+
+npm install bootstrap
+
+
+ng g c contact
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
