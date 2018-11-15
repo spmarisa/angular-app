@@ -1,20 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { ContactListComponent } from './contact-list/contact-list.component';
+import { RootComponent } from './root.component';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactService } from './contact.service';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
+    RootComponent,
+    ContactDetailsComponent,
     ContactListComponent,
-    ContactDetailsComponent
+    // Directives
+    // Pipes
+    // Components
   ],
   imports: [
+    // Modules
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    ContactService
+    // Injectables (Services)
+  ],
+  bootstrap: [RootComponent
+    // Declarables that will be used in index.html (on bootstrap)
+  ]
 })
 export class AppModule { }
